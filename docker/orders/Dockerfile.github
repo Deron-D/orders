@@ -1,4 +1,4 @@
-FROM ubuntu:latest AS builder
+FROM gitlab.84.201.150.198.sslip.io:443/gitlab-instance-711bf56d/dependency_proxy/containers/ubuntu:latest AS builder
 RUN apt update -y && \
     apt install -y openjdk-8-jdk && \
     apt install -y maven
